@@ -1,0 +1,75 @@
+/* Orbitron font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0a0a0a;
+  color: #e0e0ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Header Styling */
+header {
+  padding: 2rem;
+  background: linear-gradient(90deg, #0ff 0%, #f0f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Buttons Section */
+.buttons {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.glow-btn {
+  background: transparent;
+  border: 2px solid #0ff;
+  color: #0ff;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #f0f, 0 0 40px #0ff;
+}
+
+.glow-btn:hover {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 15px #f0f, 0 0 30px #0ff;
+}
+
+/* Footer Styling */
+footer {
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
